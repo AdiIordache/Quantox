@@ -1,14 +1,14 @@
 <?php
-namespace Quantox\Database;
+namespace Database;
+
+use Quantox\Database\Connection;
 
 class DataExtractor extends Connection
 {
-    public function getStudent()
+    public function getStudent($id)
     {
-        $id = 1;
         $sql = "SELECT * FROM students where id = {$id}";
-        $result = $this->connect()->query($sql);
-        var_dump($result);
-        return $result;
+
+        return $this->connect()->query($sql)->fetch_assoc();
     }
 }
