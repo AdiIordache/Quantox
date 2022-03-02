@@ -1,9 +1,12 @@
 {
     "require" : {
 
-        "php" : "7.4.*",
+        "php" : "8.0.7",
         "symfony/dependency-injection": "^5.1",
-        "ext-mysqli": "*"
+        "ext-mysqli": "*",
+        "symfony/http-foundation": "*",
+        "composer/xdebug-handler": "^3.0",
+        "ext-simplexml": "*"
     },
 
     "autoload": {
